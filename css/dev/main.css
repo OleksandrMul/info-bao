@@ -287,6 +287,9 @@ body {
 .footer__content {
   border-top: 0.0625rem solid #a09f9f;
 }
+.footer__column h3 {
+  font-size: 1.25rem;
+}
 .footer__column {
   display: flex;
   flex-direction: column;
@@ -575,6 +578,9 @@ body {
   .footer__address:not(:last-child) {
     margin-bottom: 0.75rem;
   }
+  .footer__statement {
+    font-size: 1.125rem;
+  }
   .footer__bottom {
     padding-top: 0.9375rem;
   }
@@ -667,6 +673,9 @@ body {
   }
   .footer__address:not(:last-child) {
     margin-bottom: clamp( 0.75rem , 0.6401098901125rem  +  0.5494505495vw , 1.0625rem );
+  }
+  .footer__statement {
+    font-size: clamp( 1.125rem , 1.08104395604375rem  +  0.2197802198vw , 1.25rem );
   }
   .footer__bottom {
     padding-top: clamp( 0.9375rem , 0.8276098901125rem  +  0.5494505495vw , 1.25rem );
@@ -825,6 +834,9 @@ body {
   }
   .footer__address:not(:last-child) {
     margin-bottom: 1.0625rem;
+  }
+  .footer__statement {
+    font-size: 1.25rem;
   }
   .footer__bottom {
     padding-top: 1.25rem;

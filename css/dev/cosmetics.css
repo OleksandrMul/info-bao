@@ -42,9 +42,6 @@
   justify-items: center;
   grid-template-columns: repeat(auto-fill, minmax(min(12.5rem, 100%), 1fr));
 }
-.item-cosmetics__content .product-card__title {
-  line-height: 1.2;
-}
 .item-cosmetics__button {
   align-self: center;
   justify-content: center;
@@ -136,9 +133,6 @@
   .item-cosmetics__inner:not(:last-child) {
     margin-bottom: 1.5625rem;
   }
-  .item-cosmetics__content .product-card__title {
-    font-size: 1.125rem;
-  }
   .page__cosmetics {
     padding-top: 5.25rem;
   }
@@ -169,9 +163,6 @@
   }
   .item-cosmetics__inner:not(:last-child) {
     margin-bottom: clamp( 1.5625rem , 0.13392857143125rem  +  7.1428571429vw , 5.625rem );
-  }
-  .item-cosmetics__content .product-card__title {
-    font-size: clamp( 1.125rem , 1.08104395604375rem  +  0.2197802198vw , 1.25rem );
   }
   .page__cosmetics {
     padding-top: clamp( 5.25rem , 3.95329670329375rem  +  6.4835164835vw , 8.9375rem );
@@ -232,9 +223,6 @@
   }
   .item-cosmetics__inner:not(:last-child) {
     margin-bottom: 5.625rem;
-  }
-  .item-cosmetics__content .product-card__title {
-    font-size: 1.25rem;
   }
   .page__cosmetics {
     padding-top: 8.9375rem;
