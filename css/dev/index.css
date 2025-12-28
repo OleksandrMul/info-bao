@@ -6,6 +6,7 @@
 }
 .page > .hero [class*=__container] {
   border-bottom: none;
+  padding-bottom: 0;
 }
 .hero {
   position: relative;
@@ -24,6 +25,23 @@
   justify-content: center;
   text-align: center;
 }
+.hero__title {
+  opacity: 0;
+  translate: 0 10%;
+}
+[data-fls-loaded] .hero__title {
+  animation: show-hero-title 0.6s ease forwards 0.3s;
+}
+@keyframes show-hero-title {
+  0% {
+    opacity: 0;
+    translate: 0 10%;
+  }
+  100% {
+    opacity: 1;
+    translate: 0 0;
+  }
+}
 .hero__text {
   text-wrap: pretty;
   color: #fff;
@@ -32,6 +50,23 @@
 }
 .hero__text p:not(:last-child) {
   margin-bottom: 0.625rem;
+}
+.hero__text {
+  opacity: 0;
+  translate: 0 15%;
+}
+[data-fls-loaded] .hero__text {
+  animation: show-hero-text 0.6s ease forwards 0.4s;
+}
+@keyframes show-hero-text {
+  0% {
+    opacity: 0;
+    translate: 0 15%;
+  }
+  100% {
+    opacity: 1;
+    translate: 0 0;
+  }
 }
 .hero__background {
   position: absolute;
@@ -43,8 +78,42 @@
   max-inline-size: 100%;
   background-color: #f8f8f8;
 }
+.hero__button {
+  opacity: 0;
+  translate: 0 10%;
+}
+[data-fls-loaded] .hero__button {
+  animation: show-hero-button 0.6s ease forwards 0.5s;
+}
+@keyframes show-hero-button {
+  0% {
+    opacity: 0;
+    translate: 0 10%;
+  }
+  100% {
+    opacity: 1;
+    translate: 0 0;
+  }
+}
 .about__title {
   text-align: center;
+}
+.about__title {
+  opacity: 0;
+  translate: 0 15%;
+}
+.--watcher-view .about__title {
+  animation: show-about-title 0.6s ease forwards 0.2s;
+}
+@keyframes show-about-title {
+  0% {
+    opacity: 0;
+    translate: 0 15%;
+  }
+  100% {
+    opacity: 1;
+    translate: 0 0;
+  }
 }
 .about__body {
   display: flex;
@@ -56,15 +125,84 @@
   object-fit: cover;
   max-width: 100%;
 }
+.about__image {
+  opacity: 0;
+  translate: 0 0.625rem;
+}
+.--watcher-view .about__image {
+  animation: show-about-content-image 0.6s ease forwards 0.3s;
+}
+@keyframes show-about-content-image {
+  0% {
+    opacity: 0;
+    translate: 0 0.625rem;
+  }
+  100% {
+    opacity: 1;
+    translate: 0 0;
+  }
+}
 .about__actions {
   text-align: center;
 }
 .about__button {
   justify-content: center;
 }
+.about__button {
+  opacity: 0;
+  translate: 0 10%;
+}
+.--watcher-view .about__button {
+  animation: show-about-button 0.6s ease forwards 0.7s;
+}
+@keyframes show-about-button {
+  0% {
+    opacity: 0;
+    translate: 0 10%;
+  }
+  100% {
+    opacity: 1;
+    translate: 0 0;
+  }
+}
+.content-about__title {
+  opacity: 0;
+  translate: 0 15%;
+}
+.--watcher-view .content-about__title {
+  animation: show-about-content-title 0.6s ease forwards 0.3s;
+}
+@keyframes show-about-content-title {
+  0% {
+    opacity: 0;
+    translate: 0 15%;
+  }
+  100% {
+    opacity: 1;
+    translate: 0 0;
+  }
+}
 .content-about__text {
   text-wrap: pretty;
   line-height: 1.2;
+}
+.content-about__text p {
+  transition-property: opacity, translate;
+  opacity: 0;
+  translate: 0 3%;
+}
+.--watcher-view .content-about__text p {
+  transition-duration: 0.6s;
+}
+.--watcher-view .content-about__text p:nth-child(1) {
+  transition-delay: 0.3s;
+}
+.--watcher-view .content-about__text p:nth-child(2) {
+  transition-delay: 0.6s;
+}
+.--watcher-view .content-about__text p {
+  translate: 0 0;
+  opacity: 1;
 }
 .cosmetics-info__container {
   display: flex;
@@ -72,6 +210,23 @@
 }
 .cosmetics-info__title {
   text-align: center;
+}
+.cosmetics-info__title {
+  opacity: 0;
+  translate: 0 15%;
+}
+.--watcher-view .cosmetics-info__title {
+  animation: show-cosmetics-info-title 0.6s ease forwards 0.2s;
+}
+@keyframes show-cosmetics-info-title {
+  0% {
+    opacity: 0;
+    translate: 0 15%;
+  }
+  100% {
+    opacity: 1;
+    translate: 0 0;
+  }
 }
 .cosmetics-info__tabs {
   max-width: 53.125rem;
@@ -81,6 +236,23 @@
   display: flex;
   flex-direction: column;
   font-size: 1.125rem;
+}
+.cosmetics-info__tabs-nav {
+  opacity: 0;
+  translate: 0 5%;
+}
+.--watcher-view .cosmetics-info__tabs-nav {
+  animation: show-cosmetics-info-nav-tabs 0.6s ease forwards 0.3s;
+}
+@keyframes show-cosmetics-info-nav-tabs {
+  0% {
+    opacity: 0;
+    translate: 0 5%;
+  }
+  100% {
+    opacity: 1;
+    translate: 0 0;
+  }
 }
 .cosmetics-info__tab {
   padding-bottom: 0.1875rem;
@@ -111,6 +283,23 @@
   align-self: center;
   justify-content: center;
 }
+.cosmetics-info__button {
+  opacity: 0;
+  translate: 0 10%;
+}
+.--watcher-view .cosmetics-info__button {
+  animation: show-cosmetics-info-button 0.6s ease forwards 0.8s;
+}
+@keyframes show-cosmetics-info-button {
+  0% {
+    opacity: 0;
+    translate: 0 10%;
+  }
+  100% {
+    opacity: 1;
+    translate: 0 0;
+  }
+}
 .blogs__container {
   display: flex;
   flex-direction: column;
@@ -118,8 +307,48 @@
 .blogs__title {
   text-align: center;
 }
+.blogs__title {
+  opacity: 0;
+  translate: 0 15%;
+}
+.--watcher-view .blogs__title {
+  animation: show-blogs-title 0.6s ease forwards 0.2s;
+}
+@keyframes show-blogs-title {
+  0% {
+    opacity: 0;
+    translate: 0 15%;
+  }
+  100% {
+    opacity: 1;
+    translate: 0 0;
+  }
+}
 .blogs__body {
   display: grid;
+}
+.blogs__body .blog-card {
+  transition-property: opacity, translate;
+  opacity: 0;
+}
+.--watcher-view .blogs__body .blog-card {
+  transition-duration: 0.6s;
+}
+.--watcher-view .blogs__body .blog-card:nth-child(1) {
+  transition-delay: 0.2s;
+}
+.--watcher-view .blogs__body .blog-card:nth-child(2) {
+  transition-delay: 0.4s;
+}
+.--watcher-view .blogs__body .blog-card:nth-child(3) {
+  transition-delay: 0.6s;
+}
+.--watcher-view .blogs__body .blog-card:nth-child(4) {
+  transition-delay: 0.8s;
+}
+.--watcher-view .blogs__body .blog-card {
+  translate: 0 0;
+  opacity: 1;
 }
 .blogs__button {
   display: flex;
@@ -127,6 +356,23 @@
   align-self: center;
   justify-content: center;
   text-align: center;
+}
+.blogs__button {
+  opacity: 0;
+  translate: 0 10%;
+}
+.--watcher-view .blogs__button {
+  animation: show-blogs-button 0.6s ease forwards 0.7s;
+}
+@keyframes show-blogs-button {
+  0% {
+    opacity: 0;
+    translate: 0 10%;
+  }
+  100% {
+    opacity: 1;
+    translate: 0 0;
+  }
 }
 @media (width <= 61.99875em){
   .blogs__body {
@@ -195,8 +441,27 @@
     width: 100%;
     aspect-ratio: 316/350;
   }
+  .about__image {
+    translate: 0 0.3125rem;
+  }
+  @keyframes show-about-content-image {
+    0% {
+      opacity: 0;
+      translate: 0 0.3125rem;
+    }
+    100% {
+      opacity: 1;
+      translate: 0 0;
+    }
+  }
+  .--watcher-view .about__image {
+    animation: show-about-content-image 0.6s ease forwards 0.5s;
+  }
   .about__button {
     width: 70%;
+  }
+  .content-about__text p {
+    translate: 0 2%;
   }
   .cosmetics-info__button {
     width: 70%;
@@ -221,9 +486,30 @@
   }
   .cosmetics-info__inner {
     grid-template-columns: 1fr;
+    opacity: 0;
+    translate: 0 0.3125rem;
+  }
+  .--watcher-view .cosmetics-info__inner {
+    animation: show-cosmetics-info-inner 0.6s ease forwards 0.3s;
+  }
+  @keyframes show-cosmetics-info-inner {
+    0% {
+      opacity: 0;
+      translate: 0 0.3125rem;
+    }
+    100% {
+      opacity: 1;
+      translate: 0 0;
+    }
   }
   .cosmetics-info__body .product-card__body {
     padding-inline: 0.9375rem;
+  }
+  .--watcher-view .cosmetics-info__button {
+    animation: show-cosmetics-info-button 0.6s ease forwards 0.5s;
+  }
+  .--watcher-view .blogs__button {
+    animation: show-blogs-button 0.6s ease forwards 0.5s;
   }
 }
 @media (max-width: 29.99875em){
@@ -241,10 +527,10 @@
   }
 }
 @media (width <= 20em){
-  .page > *:not(:first-child) [class*=__container] {
+  .page > *:not(:first-child) {
     padding-top: 1.875rem;
   }
-  .page > *:not(:first-child) [class*=__container] {
+  .page > * [class*=__container] {
     padding-bottom: 1.875rem;
   }
   .hero__body {
@@ -272,7 +558,7 @@
     margin-bottom: 0.625rem;
   }
   .content-about__text p:not(:last-child) {
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.625rem;
   }
   .cosmetics-info__title:not(:last-child) {
     margin-bottom: 0.9375rem;
@@ -299,10 +585,10 @@
   }
 }
 @media (width > 20em) and (width <= 76.875em){
-  .page > *:not(:first-child) [class*=__container] {
+  .page > *:not(:first-child) {
     padding-top: clamp( 1.875rem , 0.3365384615375rem  +  7.6923076923vw , 6.25rem );
   }
-  .page > *:not(:first-child) [class*=__container] {
+  .page > * [class*=__container] {
     padding-bottom: clamp( 1.875rem , 0.3365384615375rem  +  7.6923076923vw , 6.25rem );
   }
   .hero__body {
@@ -318,7 +604,7 @@
     margin-bottom: clamp( 2.8125rem , 2.39491758241875rem  +  2.0879120879vw , 4rem );
   }
   .about__title:not(:last-child) {
-    margin-bottom: clamp( 0.9375rem , -1.21634615384375rem  +  10.7692307692vw , 7.0625rem );
+    margin-bottom: clamp( 0.9375rem , -0.27129120879375rem  +  6.043956044vw , 4.375rem );
   }
   .about__body {
     gap: clamp( 0.9375rem , 0.8276098901125rem  +  0.5494505495vw , 1.25rem );
@@ -330,7 +616,7 @@
     margin-bottom: clamp( 0.625rem , -0.05631868131875rem  +  3.4065934066vw , 2.5625rem );
   }
   .content-about__text p:not(:last-child) {
-    margin-bottom: clamp( 0.5rem , -0.09340659340625rem  +  2.967032967vw , 2.1875rem );
+    margin-bottom: clamp( 0.625rem , 0.07554945055rem  +  2.7472527473vw , 2.1875rem );
   }
   .cosmetics-info__title:not(:last-child) {
     margin-bottom: clamp( 0.9375rem , 0.38804945055rem  +  2.7472527473vw , 2.5rem );
@@ -349,6 +635,38 @@
   }
   .blogs__body:not(:last-child) {
     margin-bottom: clamp( 1.25rem , -0.2884615384625rem  +  7.6923076923vw , 5.625rem );
+  }
+}
+@media (min-width: 34.93625em){
+  .cosmetics-info__product-card {
+    transition-property: opacity, translate;
+    opacity: 0;
+    translate: 0 2%;
+  }
+  .--watcher-view .cosmetics-info__product-card {
+    transition-duration: 0.6s;
+  }
+  .--watcher-view .cosmetics-info__product-card:nth-child(1) {
+    transition-delay: 0.2s;
+  }
+  .--watcher-view .cosmetics-info__product-card:nth-child(2) {
+    transition-delay: 0.4s;
+  }
+  .--watcher-view .cosmetics-info__product-card:nth-child(3) {
+    transition-delay: 0.6s;
+  }
+  .--watcher-view .cosmetics-info__product-card:nth-child(4) {
+    transition-delay: 0.8s;
+  }
+  .--watcher-view .cosmetics-info__product-card:nth-child(5) {
+    transition-delay: 1s;
+  }
+  .--watcher-view .cosmetics-info__product-card:nth-child(6) {
+    transition-delay: 1.2s;
+  }
+  .--watcher-view .cosmetics-info__product-card {
+    translate: 0 0;
+    opacity: 1;
   }
 }
 @media (width > 44.74875em) and (width <= 75em){
@@ -400,6 +718,9 @@
   .blogs__body {
     grid-template-columns: repeat(auto-fill, minmax(min(14.375rem, 100%), 1fr));
   }
+  .blogs__body .blog-card {
+    translate: 0 0.625rem;
+  }
 }
 @media (width > 61.99875em) and (width <= 75em){
   .blogs__body {
@@ -432,10 +753,10 @@
   }
 }
 @media (width > 76.875em){
-  .page > *:not(:first-child) [class*=__container] {
+  .page > *:not(:first-child) {
     padding-top: 6.25rem;
   }
-  .page > *:not(:first-child) [class*=__container] {
+  .page > * [class*=__container] {
     padding-bottom: 6.25rem;
   }
   .hero__body {
@@ -451,7 +772,7 @@
     margin-bottom: 4rem;
   }
   .about__title:not(:last-child) {
-    margin-bottom: 7.0625rem;
+    margin-bottom: 4.375rem;
   }
   .about__body {
     gap: 1.25rem;

@@ -8,6 +8,23 @@
 .blogs__title {
   text-align: center;
 }
+.blogs__title {
+  opacity: 0;
+  translate: 0 10%;
+}
+[data-fls-loaded] .blogs__title {
+  animation: show-blogs-title 0.6s ease forwards 0.2s;
+}
+@keyframes show-blogs-title {
+  0% {
+    opacity: 0;
+    translate: 0 10%;
+  }
+  100% {
+    opacity: 1;
+    translate: 0 0;
+  }
+}
 .blogs__body {
   margin-inline: -0.9375rem;
 }
@@ -25,8 +42,45 @@
 .blogs__category-title {
   text-align: center;
 }
+.blogs__category-title {
+  opacity: 0;
+  translate: 0 15%;
+}
+.--watcher-view .blogs__category-title {
+  animation: show-blogs-title 0.6s ease forwards 0.3s;
+}
+@keyframes show-blogs-title {
+  0% {
+    opacity: 0;
+    translate: 0 15%;
+  }
+  100% {
+    opacity: 1;
+    translate: 0 0;
+  }
+}
 .blogs__category-body {
   display: grid;
+}
+.blogs__category-body .blog-card {
+  transition-property: opacity, translate;
+  opacity: 0;
+}
+.--watcher-view .blogs__category-body .blog-card {
+  transition-duration: 0.6s;
+}
+.--watcher-view .blogs__category-body .blog-card:nth-child(1) {
+  transition-delay: 0.2s;
+}
+.--watcher-view .blogs__category-body .blog-card:nth-child(2) {
+  transition-delay: 0.4s;
+}
+.--watcher-view .blogs__category-body .blog-card:nth-child(3) {
+  transition-delay: 0.6s;
+}
+.--watcher-view .blogs__category-body .blog-card {
+  translate: 0 0;
+  opacity: 1;
 }
 .blogs__button {
   display: flex;
@@ -34,6 +88,23 @@
   align-self: center;
   justify-content: center;
   text-align: center;
+}
+.blogs__button {
+  opacity: 0;
+  translate: 0 10%;
+}
+.--watcher-view .blogs__button {
+  animation: show-blogs-button 0.6s ease forwards 0.7s;
+}
+@keyframes show-blogs-button {
+  0% {
+    opacity: 0;
+    translate: 0 10%;
+  }
+  100% {
+    opacity: 1;
+    translate: 0 0;
+  }
 }
 @media (width <= 61.99875em){
   .blogs__category-body {
@@ -91,6 +162,11 @@
 @media (max-width: 36.31125em){
   .blogs__category-body .blog-card {
     flex: 0 0 16.875rem;
+  }
+}
+@media (max-width: 34.93625em){
+  .--watcher-view .blogs__button {
+    animation: show-blogs-button 0.6s ease forwards 0.5s;
   }
 }
 @media (max-width: 29.99875em){
@@ -156,6 +232,9 @@
 @media (min-width: 54.24875em){
   .blogs__category-body {
     grid-template-columns: repeat(auto-fill, minmax(min(14.375rem, 100%), 1fr));
+  }
+  .blogs__category-body .blog-card {
+    translate: 0 0.625rem;
   }
 }
 @media (width > 61.99875em) and (width <= 75em){

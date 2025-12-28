@@ -8,14 +8,25 @@
 .cosmetics-page__title {
   text-align: center;
 }
+.cosmetics-page__title {
+  opacity: 0;
+  translate: 0 10%;
+}
+[data-fls-loaded] .cosmetics-page__title {
+  animation: show-cosmetics-page-title 0.6s ease forwards 0.1s;
+}
+@keyframes show-cosmetics-page-title {
+  0% {
+    opacity: 0;
+    translate: 0 10%;
+  }
+  100% {
+    opacity: 1;
+    translate: 0 0;
+  }
+}
 .cosmetics-page__content {
   margin-inline: -0.9375rem;
-}
-.cosmetics-page__content > *:first-child {
-  border-top: 0.0625rem solid #837f7f;
-}
-.cosmetics-page__content > *:last-child {
-  border-bottom: 0.0625rem solid #837f7f;
 }
 .cosmetics-page__body {
   display: grid;
@@ -29,12 +40,21 @@
   padding-inline: 0.9375rem;
   text-align: center;
 }
-@media (max-width: 61.99875em){
-  .cosmetics-page__content > *:first-child {
-    border-top: none;
+.cosmetics-page__sub-title {
+  opacity: 0;
+  translate: 0 15%;
+}
+[data-fls-loaded] .cosmetics-page__sub-title {
+  animation: show-cosmetics-page-sub-title 0.6s ease forwards 0.2s;
+}
+@keyframes show-cosmetics-page-sub-title {
+  0% {
+    opacity: 0;
+    translate: 0 15%;
   }
-  .cosmetics-page__content > *:last-child {
-    border-bottom: none;
+  100% {
+    opacity: 1;
+    translate: 0 0;
   }
 }
 @media (width <= 44.74875em){
@@ -48,6 +68,21 @@
 @media (max-width: 34.93625em){
   .cosmetics-page__body {
     grid-template-columns: 1fr;
+    opacity: 0;
+    translate: 0 0.3125rem;
+  }
+  .--watcher-view .cosmetics-page__body {
+    animation: show-cosmetics-page-body 0.6s ease forwards 0.3s;
+  }
+  @keyframes show-cosmetics-page-body {
+    0% {
+      opacity: 0;
+      translate: 0 0.3125rem;
+    }
+    100% {
+      opacity: 1;
+      translate: 0 0;
+    }
   }
   .cosmetics-page__body .product-card__body {
     padding-inline: 0.9375rem;
@@ -82,7 +117,7 @@
   .page__cosmetics-page {
     padding-bottom: 1.875rem;
   }
-  .cosmetics-page__sub-title {
+  .cosmetics-page__content {
     padding-top: 1.875rem;
   }
 }
@@ -121,6 +156,50 @@
     padding-inline: clamp( 0.9375rem , -12.47440149985625rem  +  21.6325353331vw , 3.75rem );
   }
 }
+@media (min-width: 34.93625em){
+  .cosmetics-page__body .product-card {
+    transition-property: opacity, translate;
+    opacity: 0;
+    translate: 0 2%;
+  }
+  .--watcher-view .cosmetics-page__body .product-card {
+    transition-duration: 0.6s;
+  }
+  .--watcher-view .cosmetics-page__body .product-card:nth-child(1) {
+    transition-delay: 0.1s;
+  }
+  .--watcher-view .cosmetics-page__body .product-card:nth-child(2) {
+    transition-delay: 0.2s;
+  }
+  .--watcher-view .cosmetics-page__body .product-card:nth-child(3) {
+    transition-delay: 0.3s;
+  }
+  .--watcher-view .cosmetics-page__body .product-card:nth-child(4) {
+    transition-delay: 0.4s;
+  }
+  .--watcher-view .cosmetics-page__body .product-card:nth-child(5) {
+    transition-delay: 0.5s;
+  }
+  .--watcher-view .cosmetics-page__body .product-card:nth-child(6) {
+    transition-delay: 0.6s;
+  }
+  .--watcher-view .cosmetics-page__body .product-card:nth-child(7) {
+    transition-delay: 0.7s;
+  }
+  .--watcher-view .cosmetics-page__body .product-card:nth-child(8) {
+    transition-delay: 0.8s;
+  }
+  .--watcher-view .cosmetics-page__body .product-card:nth-child(9) {
+    transition-delay: 0.9s;
+  }
+  .--watcher-view .cosmetics-page__body .product-card:nth-child(10) {
+    transition-delay: 1s;
+  }
+  .--watcher-view .cosmetics-page__body .product-card {
+    translate: 0 0;
+    opacity: 1;
+  }
+}
 @media (width > 44.74875em) and (width <= 75em){
   .cosmetics-page__body {
     column-gap: clamp( 0.9375rem , -15.42655262179375rem  +  36.5687368291vw , 12rem );
@@ -133,7 +212,7 @@
   .page__cosmetics-page {
     padding-bottom: 6.25rem;
   }
-  .cosmetics-page__sub-title {
+  .cosmetics-page__content {
     padding-top: 2.8125rem;
   }
 }
@@ -141,8 +220,14 @@
   .page__cosmetics-page {
     padding-bottom: clamp( 1.875rem , 0.3365384615375rem  +  7.6923076923vw , 6.25rem );
   }
-  .cosmetics-page__sub-title {
+  .cosmetics-page__content {
     padding-top: clamp( 1.875rem , 1.54532967033125rem  +  1.6483516484vw , 2.8125rem );
+  }
+}
+@media (min-width: 61.99875em){
+  .cosmetics-page__content {
+    border-top: 0.0625rem solid #837f7f;
+    border-bottom: 0.0625rem solid #837f7f;
   }
 }
 @media (width > 75em){

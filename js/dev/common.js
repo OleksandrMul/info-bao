@@ -14,6 +14,15 @@ const isMobile = { Android: function() {
 function addTouchAttr() {
   if (isMobile.any()) document.documentElement.setAttribute("data-fls-touch", "");
 }
+function addLoadedAttr() {
+  if (!document.documentElement.hasAttribute("data-fls-preloader-loading")) {
+    window.addEventListener("load", function() {
+      setTimeout(function() {
+        document.documentElement.setAttribute("data-fls-loaded", "");
+      }, 0);
+    });
+  }
+}
 function getHash() {
   if (location.hash) {
     return location.hash.replace("#", "");
@@ -135,6 +144,9 @@ let bodyLock = (delay = 500) => {
     }, delay);
   }
 };
+function uniqArray(array) {
+  return array.filter((item, index, self) => self.indexOf(item) === index);
+}
 function dataMediaQueries(array, dataSetValue) {
   const media = Array.from(array).filter((item) => item.dataset[dataSetValue]).map((item) => {
     const [value, type = "max"] = item.dataset[dataSetValue].split(",");
@@ -151,6 +163,7 @@ function dataMediaQueries(array, dataSetValue) {
   });
 }
 addTouchAttr();
+addLoadedAttr();
 export {
   slideUp as a,
   bodyLockToggle as b,
@@ -159,5 +172,6 @@ export {
   slideDown as e,
   setHash as f,
   getHash as g,
-  slideToggle as s
+  slideToggle as s,
+  uniqArray as u
 };
