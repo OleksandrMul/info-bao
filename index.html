@@ -1,21 +1,24 @@
 <!doctype html>
 <html lang="en">
 	<head>
+		<style data-fls-preloader="false" rel="preload">
+			body > *:not(.fls-preloader) {opacity: 0;visibility: hidden;}[data-fls-preloader-loaded] body > *:not(.fls-preloader) {transition: opacity 0.5s ease 0s;opacity: 1;visibility: visible;}
+		</style>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="shortcut icon" href="./assets/img/favicon.ico">
 		<title>Home</title>
-		<link rel="modulepreload" crossorigin href="./js/common.min.js?v=1766697099515">
-		<script type="module" crossorigin="" src="./js/main.min.js?v=1766697099515"></script>
-		<script type="module" crossorigin="" src="./js/tabs.min.js?v=1766697099515"></script>
-		<script type="module" crossorigin="" src="./js/productcard.min.js?v=1766697099515"></script>
-		<script type="module" crossorigin="" src="./js/blogcard.min.js?v=1766697099515"></script>
-		<link rel="stylesheet" crossorigin="" href="./css/main.min.css?v=1766697099515">
-		<link rel="stylesheet" crossorigin="" href="./css/tigifreakserum.min.css?v=1766697099515">
-		<link rel="stylesheet" crossorigin="" href="./css/productcard.min.css?v=1766697099515">
-		<link rel="stylesheet" crossorigin="" href="./css/blogcard.min.css?v=1766697099515">
-		<link rel="stylesheet" crossorigin="" href="./css/index.min.css?v=1766697099515">
-		<link rel="stylesheet" crossorigin="" href="./css/button.min.css?v=1766697099515">
+		<link rel="modulepreload" crossorigin href="./js/common.min.js?v=1766955939605">
+		<script type="module" crossorigin="" src="./js/main.min.js?v=1766955939605"></script>
+		<script type="module" crossorigin="" src="./js/tabs.min.js?v=1766955939605"></script>
+		<script type="module" crossorigin="" src="./js/productcard.min.js?v=1766955939605"></script>
+		<script type="module" crossorigin="" src="./js/blogcard.min.js?v=1766955939605"></script>
+		<link rel="stylesheet" crossorigin="" href="./css/main.min.css?v=1766955939605">
+		<link rel="stylesheet" crossorigin="" href="./css/tigifreakserum.min.css?v=1766955939605">
+		<link rel="stylesheet" crossorigin="" href="./css/productcard.min.css?v=1766955939605">
+		<link rel="stylesheet" crossorigin="" href="./css/blogcard.min.css?v=1766955939605">
+		<link rel="stylesheet" crossorigin="" href="./css/index.min.css?v=1766955939605">
+		<link rel="stylesheet" crossorigin="" href="./css/button.min.css?v=1766955939605">
 	</head>
 	<body>
 		<div class="wrapper">
@@ -68,7 +71,7 @@
 					</picture>
 				</section>
 				<section class="page__about about" aria-labelledby="about-title">
-					<div class="about__container">
+					<div data-fls-watcher="" data-fls-watcher-once="" class="about__container">
 						<h2 id="about-title" data-fls-title="" class="about__title title">About Us</h2>
 						<div class="about__body">
 							<div class="about__content content-about">
@@ -96,7 +99,7 @@
 					</div>
 				</section>
 				<section class="page__cosmetics-info cosmetics-info" aria-labelledby="cosmetics-info-title">
-					<div class="cosmetics-info__container">
+					<div data-fls-watcher="" data-fls-watcher-once="" class="cosmetics-info__container">
 						<h2 id="cosmetics-info-title" data-fls-title="" class="cosmetics-info__title title">Cosmetics Info</h2>
 						<div data-fls-tabs="" data-fls-tabs-animate="800" class="cosmetics-info__tabs">
 							<nav data-fls-tabs-titles="" class="cosmetics-info__tabs-nav" role="tablist" aria-label="Cosmetics categories">
@@ -107,13 +110,13 @@
 							<div data-fls-tabs-body="" class="cosmetics-info__panels">
 								<div role="tabpanel" id="tab-panel-1" aria-labelledby="tab-1" class="cosmetics-info__body">
 									<div class="cosmetics-info__inner">
-										<article data-fls-productcard="" class="product-card" aria-labelledby="prod-1-title">
+										<article data-fls-productcard="" class="cosmetics-info__product-card product-card" aria-labelledby="prod-1-title">
 											<figure class="product-card__media">
 												<a class="product-card__link" href="cosrxclearingserum.html">
 													<picture>
 														<source media="(max-width: 600px)" srcset="./assets/img/cosmetics-info/cosrx-ac-collection-blemish-spot-clearing-serum-600.webp" type="image/webp">
 														<source media="(max-width: 1200px)" srcset="./assets/img/cosmetics-info/cosrx-ac-collection-blemish-spot-clearing-serum-1200.webp" type="image/webp">
-														<img class="product-card__image" alt="A glass dropper bottle of clear liquid rests on textured stone, alongside a delicate brown feather, showcasing a natural aesthetic." loading="lazy" decoding="async" src="./assets/img/cosmetics-info/cosrx-ac-collection-blemish-spot-clearing-serum.webp">
+														<img class="product-card__image" alt="A glass dropper bottle of clear liquid rests on textured stone, alongside a delicate brown feather, showcasing a natural aesthetic." src="./assets/img/cosmetics-info/cosrx-ac-collection-blemish-spot-clearing-serum.webp">
 													</picture>
 												</a>
 											</figure>
@@ -123,13 +126,13 @@
 												</h3>
 											</div>
 										</article>
-										<article data-fls-productcard="" class="product-card" aria-labelledby="prod-2-title">
+										<article data-fls-productcard="" class="cosmetics-info__product-card product-card" aria-labelledby="prod-2-title">
 											<figure class="product-card__media">
 												<a class="product-card__link" href="chiluxurydryoil.html">
 													<picture>
 														<source media="(max-width: 600px)" srcset="./assets/img/cosmetics-info/chi-luxury-black-seed-oil-dry-oil-600.webp" type="image/webp">
 														<source media="(max-width: 1200px)" srcset="./assets/img/cosmetics-info/chi-luxury-black-seed-oil-dry-oil-1200.webp" type="image/webp">
-														<img class="product-card__image" alt="Frosted glass perfume bottle with a reflective silver cap standing upright in fine beige sand, surrounded by dry brown desert plants, natural skincare product photography, minimalist cosmetic packaging, earthy organic beauty aesthetic." loading="lazy" decoding="async" src="./assets/img/cosmetics-info/chi-luxury-black-seed-oil-dry-oil.webp">
+														<img class="product-card__image" alt="Frosted glass perfume bottle with a reflective silver cap standing upright in fine beige sand, surrounded by dry brown desert plants, natural skincare product photography, minimalist cosmetic packaging, earthy organic beauty aesthetic." src="./assets/img/cosmetics-info/chi-luxury-black-seed-oil-dry-oil.webp">
 													</picture>
 												</a>
 											</figure>
@@ -139,13 +142,13 @@
 												</h3>
 											</div>
 										</article>
-										<article data-fls-productcard="" class="product-card" aria-labelledby="prod-3-title">
+										<article data-fls-productcard="" class="cosmetics-info__product-card product-card" aria-labelledby="prod-3-title">
 											<figure class="product-card__media">
 												<a class="product-card__link" href="heimishsatincream.html">
 													<picture>
 														<source media="(max-width: 600px)" srcset="./assets/img/cosmetics-info/heimish-bulgarian-rose-satin-cream-600.webp" type="image/webp">
 														<source media="(max-width: 1200px)" srcset="./assets/img/cosmetics-info/heimish-bulgarian-rose-satin-cream-1200.webp" type="image/webp">
-														<img class="product-card__image" alt="Glossy black cosmetic jar partially embedded in beige sand, surrounded by dry spiky desert plants, minimalist skincare product packaging, luxury beauty container, natural outdoor product photography with earthy neutral tones." loading="lazy" decoding="async" src="./assets/img/cosmetics-info/heimish-bulgarian-rose-satin-cream.webp">
+														<img class="product-card__image" alt="Glossy black cosmetic jar partially embedded in beige sand, surrounded by dry spiky desert plants, minimalist skincare product packaging, luxury beauty container, natural outdoor product photography with earthy neutral tones." src="./assets/img/cosmetics-info/heimish-bulgarian-rose-satin-cream.webp">
 													</picture>
 												</a>
 											</figure>
@@ -155,13 +158,13 @@
 												</h3>
 											</div>
 										</article>
-										<article data-fls-productcard="" class="product-card" aria-labelledby="prod-4-title">
+										<article data-fls-productcard="" class="cosmetics-info__product-card product-card" aria-labelledby="prod-4-title">
 											<figure class="product-card__media">
 												<a class="product-card__link" href="larocheserum.html">
 													<picture>
 														<source media="(max-width: 600px)" srcset="./assets/img/cosmetics-info/la-roche-posay-hyalu-b5-serum-600.webp" type="image/webp">
 														<source media="(max-width: 1200px)" srcset="./assets/img/cosmetics-info/la-roche-posay-hyalu-b5-serum-1200.webp" type="image/webp">
-														<img class="product-card__image" alt="Frosted glass serum dropper bottle with a white pipette and shiny gold collar placed on a textured white stone, surrounded by dry desert plants, natural skincare product photography, minimalist cosmetic packaging, clean beauty aesthetic in a sandy outdoor setting." loading="lazy" decoding="async" src="./assets/img/cosmetics-info/la-roche-posay-hyalu-b5-serum.webp">
+														<img class="product-card__image" alt="Frosted glass serum dropper bottle with a white pipette and shiny gold collar placed on a textured white stone, surrounded by dry desert plants, natural skincare product photography, minimalist cosmetic packaging, clean beauty aesthetic in a sandy outdoor setting." src="./assets/img/cosmetics-info/la-roche-posay-hyalu-b5-serum.webp">
 													</picture>
 												</a>
 											</figure>
@@ -171,13 +174,13 @@
 												</h3>
 											</div>
 										</article>
-										<article data-fls-productcard="" class="product-card" aria-labelledby="prod-5-title">
+										<article data-fls-productcard="" class="cosmetics-info__product-card product-card" aria-labelledby="prod-5-title">
 											<figure class="product-card__media">
 												<a class="product-card__link" href="lancomedaycream.html">
 													<picture>
 														<source media="(max-width: 600px)" srcset="./assets/img/cosmetics-info/lancome-genifique-youth-activating-day-cream-600.webp" type="image/webp">
 														<source media="(max-width: 1200px)" srcset="./assets/img/cosmetics-info/lancome-genifique-youth-activating-day-cream-1200.webp" type="image/webp">
-														<img class="product-card__image" alt="A clear perfume bottle with a gold cap and a white jar with a gold lid sit on a rough, light-colored rock surrounded by brown sand." loading="lazy" decoding="async" src="./assets/img/cosmetics-info/lancome-genifique-youth-activating-day-cream.webp">
+														<img class="product-card__image" alt="A clear perfume bottle with a gold cap and a white jar with a gold lid sit on a rough, light-colored rock surrounded by brown sand." src="./assets/img/cosmetics-info/lancome-genifique-youth-activating-day-cream.webp">
 													</picture>
 												</a>
 											</figure>
@@ -187,13 +190,13 @@
 												</h3>
 											</div>
 										</article>
-										<article data-fls-productcard="" class="product-card" aria-labelledby="prod-6-title">
+										<article data-fls-productcard="" class="cosmetics-info__product-card product-card" aria-labelledby="prod-6-title">
 											<figure class="product-card__media">
 												<a class="product-card__link" href="dermalogicamasque.html">
 													<picture>
 														<source media="(max-width: 600px)" srcset="./assets/img/cosmetics-info/dermalogica-daily-skin-health-charcoal-rescue-masque-600.webp" type="image/webp">
 														<source media="(max-width: 1200px)" srcset="./assets/img/cosmetics-info/dermalogica-daily-skin-health-charcoal-rescue-masque-1200.webp" type="image/webp">
-														<img class="product-card__image" alt="Blank white cosmetic tube resting diagonally on a textured, light beige stone surface next to a dried reddish-brown plant sprig." loading="lazy" decoding="async" src="./assets/img/cosmetics-info/dermalogica-daily-skin-health-charcoal-rescue-masque.webp">
+														<img class="product-card__image" alt="Blank white cosmetic tube resting diagonally on a textured, light beige stone surface next to a dried reddish-brown plant sprig." src="./assets/img/cosmetics-info/dermalogica-daily-skin-health-charcoal-rescue-masque.webp">
 													</picture>
 												</a>
 											</figure>
@@ -207,13 +210,13 @@
 								</div>
 								<div role="tabpanel" id="tab-panel-2" aria-labelledby="tab-2" class="cosmetics-info__body">
 									<div class="cosmetics-info__inner">
-										<article data-fls-productcard="" class="product-card" aria-labelledby="prod-7-title">
+										<article data-fls-productcard="" class="cosmetics-info__product-card product-card" aria-labelledby="prod-7-title">
 											<figure class="product-card__media">
 												<a class="product-card__link" href="heimishsatincream.html">
 													<picture>
 														<source media="(max-width: 600px)" srcset="./assets/img/cosmetics-info/heimish-bulgarian-rose-satin-cream-600.webp" type="image/webp">
 														<source media="(max-width: 1200px)" srcset="./assets/img/cosmetics-info/heimish-bulgarian-rose-satin-cream-1200.webp" type="image/webp">
-														<img class="product-card__image" alt="Glossy black cosmetic jar partially embedded in beige sand, surrounded by dry spiky desert plants, minimalist skincare product packaging, luxury beauty container, natural outdoor product photography with earthy neutral tones." loading="lazy" decoding="async" src="./assets/img/cosmetics-info/heimish-bulgarian-rose-satin-cream.webp">
+														<img class="product-card__image" alt="Glossy black cosmetic jar partially embedded in beige sand, surrounded by dry spiky desert plants, minimalist skincare product packaging, luxury beauty container, natural outdoor product photography with earthy neutral tones." src="./assets/img/cosmetics-info/heimish-bulgarian-rose-satin-cream.webp">
 													</picture>
 												</a>
 											</figure>
@@ -223,13 +226,13 @@
 												</h3>
 											</div>
 										</article>
-										<article data-fls-productcard="" class="product-card" aria-labelledby="prod-8-title">
+										<article data-fls-productcard="" class="cosmetics-info__product-card product-card" aria-labelledby="prod-8-title">
 											<figure class="product-card__media">
 												<a class="product-card__link" href="larocheserum.html">
 													<picture>
 														<source media="(max-width: 600px)" srcset="./assets/img/cosmetics-info/la-roche-posay-hyalu-b5-serum-600.webp" type="image/webp">
 														<source media="(max-width: 1200px)" srcset="./assets/img/cosmetics-info/la-roche-posay-hyalu-b5-serum-1200.webp" type="image/webp">
-														<img class="product-card__image" alt="Frosted glass serum dropper bottle with a white pipette and shiny gold collar placed on a textured white stone, surrounded by dry desert plants, natural skincare product photography, minimalist cosmetic packaging, clean beauty aesthetic in a sandy outdoor setting." loading="lazy" decoding="async" src="./assets/img/cosmetics-info/la-roche-posay-hyalu-b5-serum.webp">
+														<img class="product-card__image" alt="Frosted glass serum dropper bottle with a white pipette and shiny gold collar placed on a textured white stone, surrounded by dry desert plants, natural skincare product photography, minimalist cosmetic packaging, clean beauty aesthetic in a sandy outdoor setting." src="./assets/img/cosmetics-info/la-roche-posay-hyalu-b5-serum.webp">
 													</picture>
 												</a>
 											</figure>
@@ -239,13 +242,13 @@
 												</h3>
 											</div>
 										</article>
-										<article data-fls-productcard="" class="product-card" aria-labelledby="prod-9-title">
+										<article data-fls-productcard="" class="cosmetics-info__product-card product-card" aria-labelledby="prod-9-title">
 											<figure class="product-card__media">
 												<a class="product-card__link" href="lancomedaycream.html">
 													<picture>
 														<source media="(max-width: 600px)" srcset="./assets/img/cosmetics-info/lancome-genifique-youth-activating-day-cream-600.webp" type="image/webp">
 														<source media="(max-width: 1200px)" srcset="./assets/img/cosmetics-info/lancome-genifique-youth-activating-day-cream-1200.webp" type="image/webp">
-														<img class="product-card__image" alt="A clear perfume bottle with a gold cap and a white jar with a gold lid sit on a rough, light-colored rock surrounded by brown sand." loading="lazy" decoding="async" src="./assets/img/cosmetics-info/lancome-genifique-youth-activating-day-cream.webp">
+														<img class="product-card__image" alt="A clear perfume bottle with a gold cap and a white jar with a gold lid sit on a rough, light-colored rock surrounded by brown sand." src="./assets/img/cosmetics-info/lancome-genifique-youth-activating-day-cream.webp">
 													</picture>
 												</a>
 											</figure>
@@ -255,13 +258,13 @@
 												</h3>
 											</div>
 										</article>
-										<article data-fls-productcard="" class="product-card" aria-labelledby="prod-10-title">
+										<article data-fls-productcard="" class="cosmetics-info__product-card product-card" aria-labelledby="prod-10-title">
 											<figure class="product-card__media">
 												<a class="product-card__link" href="dermalogicamasque.html">
 													<picture>
 														<source media="(max-width: 600px)" srcset="./assets/img/cosmetics-info/dermalogica-daily-skin-health-charcoal-rescue-masque-600.webp" type="image/webp">
 														<source media="(max-width: 1200px)" srcset="./assets/img/cosmetics-info/dermalogica-daily-skin-health-charcoal-rescue-masque-1200.webp" type="image/webp">
-														<img class="product-card__image" alt="Blank white cosmetic tube resting diagonally on a textured, light beige stone surface next to a dried reddish-brown plant sprig." loading="lazy" decoding="async" src="./assets/img/cosmetics-info/dermalogica-daily-skin-health-charcoal-rescue-masque.webp">
+														<img class="product-card__image" alt="Blank white cosmetic tube resting diagonally on a textured, light beige stone surface next to a dried reddish-brown plant sprig." src="./assets/img/cosmetics-info/dermalogica-daily-skin-health-charcoal-rescue-masque.webp">
 													</picture>
 												</a>
 											</figure>
@@ -275,13 +278,13 @@
 								</div>
 								<div role="tabpanel" id="tab-panel-3" aria-labelledby="tab-3" class="cosmetics-info__body">
 									<div class="cosmetics-info__inner">
-										<article data-fls-productcard="" class="product-card" aria-labelledby="prod-11-title">
+										<article data-fls-productcard="" class="cosmetics-info__product-card product-card" aria-labelledby="prod-11-title">
 											<figure class="product-card__media">
 												<a class="product-card__link" href="chiluxurydryoil.html">
 													<picture>
 														<source media="(max-width: 600px)" srcset="./assets/img/cosmetics-info/chi-luxury-black-seed-oil-dry-oil-600.webp" type="image/webp">
 														<source media="(max-width: 1200px)" srcset="./assets/img/cosmetics-info/chi-luxury-black-seed-oil-dry-oil-1200.webp" type="image/webp">
-														<img class="product-card__image" alt="Frosted glass perfume bottle with a reflective silver cap standing upright in fine beige sand, surrounded by dry brown desert plants, natural skincare product photography, minimalist cosmetic packaging, earthy organic beauty aesthetic." loading="lazy" decoding="async" src="./assets/img/cosmetics-info/chi-luxury-black-seed-oil-dry-oil.webp">
+														<img class="product-card__image" alt="Frosted glass perfume bottle with a reflective silver cap standing upright in fine beige sand, surrounded by dry brown desert plants, natural skincare product photography, minimalist cosmetic packaging, earthy organic beauty aesthetic." src="./assets/img/cosmetics-info/chi-luxury-black-seed-oil-dry-oil.webp">
 													</picture>
 												</a>
 											</figure>
@@ -291,13 +294,13 @@
 												</h3>
 											</div>
 										</article>
-										<article data-fls-productcard="" class="product-card" aria-labelledby="prod-12-title">
+										<article data-fls-productcard="" class="cosmetics-info__product-card product-card" aria-labelledby="prod-12-title">
 											<figure class="product-card__media">
 												<a class="product-card__link" href="heimishsatincream.html">
 													<picture>
 														<source media="(max-width: 600px)" srcset="./assets/img/cosmetics-info/heimish-bulgarian-rose-satin-cream-600.webp" type="image/webp">
 														<source media="(max-width: 1200px)" srcset="./assets/img/cosmetics-info/heimish-bulgarian-rose-satin-cream-1200.webp" type="image/webp">
-														<img class="product-card__image" alt="Glossy black cosmetic jar partially embedded in beige sand, surrounded by dry spiky desert plants, minimalist skincare product packaging, luxury beauty container, natural outdoor product photography with earthy neutral tones." loading="lazy" decoding="async" src="./assets/img/cosmetics-info/heimish-bulgarian-rose-satin-cream.webp">
+														<img class="product-card__image" alt="Glossy black cosmetic jar partially embedded in beige sand, surrounded by dry spiky desert plants, minimalist skincare product packaging, luxury beauty container, natural outdoor product photography with earthy neutral tones." src="./assets/img/cosmetics-info/heimish-bulgarian-rose-satin-cream.webp">
 													</picture>
 												</a>
 											</figure>
@@ -307,13 +310,13 @@
 												</h3>
 											</div>
 										</article>
-										<article data-fls-productcard="" class="product-card" aria-labelledby="prod-13-title">
+										<article data-fls-productcard="" class="cosmetics-info__product-card product-card" aria-labelledby="prod-13-title">
 											<figure class="product-card__media">
 												<a class="product-card__link" href="larocheserum.html">
 													<picture>
 														<source media="(max-width: 600px)" srcset="./assets/img/cosmetics-info/la-roche-posay-hyalu-b5-serum-600.webp" type="image/webp">
 														<source media="(max-width: 1200px)" srcset="./assets/img/cosmetics-info/la-roche-posay-hyalu-b5-serum-1200.webp" type="image/webp">
-														<img class="product-card__image" alt="Frosted glass serum dropper bottle with a white pipette and shiny gold collar placed on a textured white stone, surrounded by dry desert plants, natural skincare product photography, minimalist cosmetic packaging, clean beauty aesthetic in a sandy outdoor setting." loading="lazy" decoding="async" src="./assets/img/cosmetics-info/la-roche-posay-hyalu-b5-serum.webp">
+														<img class="product-card__image" alt="Frosted glass serum dropper bottle with a white pipette and shiny gold collar placed on a textured white stone, surrounded by dry desert plants, natural skincare product photography, minimalist cosmetic packaging, clean beauty aesthetic in a sandy outdoor setting." src="./assets/img/cosmetics-info/la-roche-posay-hyalu-b5-serum.webp">
 													</picture>
 												</a>
 											</figure>
@@ -331,13 +334,13 @@
 					</div>
 				</section>
 				<section class="page__blogs blogs" aria-labelledby="blogs-info-title">
-					<div class="blogs__container">
+					<div data-fls-watcher="" data-fls-watcher-once="" class="blogs__container">
 						<h2 id="blogs-info-title" data-fls-title="" class="blogs__title title">Blogs</h2>
 						<div class="blogs__body">
 							<article data-fls-blogcard="" class="blog-card" aria-labelledby="blog-1-title">
 								<a href="acne.html" class="blog-card__link">
 									<picture>
-										<img class="blog-card__image" alt="Woman with acne applying yellow facial serum to her forehead using a dropper against a plain gray background." loading="lazy" decoding="async" src="./assets/img/blogs/acne.webp">
+										<img class="blog-card__image" alt="Woman with acne applying yellow facial serum to her forehead using a dropper against a plain gray background." src="./assets/img/blogs/acne.webp">
 									</picture>
 									<div class="blog-card__content">
 										<div class="blog-card__inner">
@@ -350,7 +353,7 @@
 							<article data-fls-blogcard="" class="blog-card" aria-labelledby="blog-2-title">
 								<a href="freckles.html" class="blog-card__link">
 									<picture>
-										<img class="blog-card__image" alt="Close-up portrait of a young woman with light skin covered in natural freckles, showing her grey-blue eye and glossy lips." loading="lazy" decoding="async" src="./assets/img/blogs/freckles.webp">
+										<img class="blog-card__image" alt="Close-up portrait of a young woman with light skin covered in natural freckles, showing her grey-blue eye and glossy lips." src="./assets/img/blogs/freckles.webp">
 									</picture>
 									<div class="blog-card__content">
 										<div class="blog-card__inner">
@@ -363,7 +366,7 @@
 							<article data-fls-blogcard="" class="blog-card" aria-labelledby="blog-3-title">
 								<a href="claymask.html" class="blog-card__link">
 									<picture>
-										<img class="blog-card__image" alt="Woman with a white towel wrapped around her hair has a dual-tone charcoal and white face mask applied while touching her face." loading="lazy" decoding="async" src="./assets/img/blogs/clay-mask.webp">
+										<img class="blog-card__image" alt="Woman with a white towel wrapped around her hair has a dual-tone charcoal and white face mask applied while touching her face." src="./assets/img/blogs/clay-mask.webp">
 									</picture>
 									<div class="blog-card__content">
 										<div class="blog-card__inner">
@@ -379,7 +382,7 @@
 				</section>
 			</main>
 			<footer data-fls-footer="" class="footer" aria-label="Site footer">
-				<div class="footer__container">
+				<div data-fls-watcher="" data-fls-watcher-once="" class="footer__container">
 					<div class="footer__inner">
 						<div data-fls-spollers="479.98" data-fls-spollers-one="" class="footer__content">
 							<details class="footer__column footer__column--company" aria-labelledby="footer-company-heading">

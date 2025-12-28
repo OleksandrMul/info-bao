@@ -1,18 +1,21 @@
 <!doctype html>
 <html lang="en">
 	<head>
+		<style data-fls-preloader="false" rel="preload">
+			body > *:not(.fls-preloader) {opacity: 0;visibility: hidden;}[data-fls-preloader-loaded] body > *:not(.fls-preloader) {transition: opacity 0.5s ease 0s;opacity: 1;visibility: visible;}
+		</style>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="shortcut icon" href="./assets/img/favicon.ico">
 		<title>Blogs Face</title>
-		<link rel="modulepreload" crossorigin href="./js/common.min.js?v=1766697099503">
-		<script type="module" crossorigin="" src="./js/main.min.js?v=1766697099503"></script>
-		<script type="module" crossorigin="" src="./js/breadcrumbs.min.js?v=1766697099503"></script>
-		<script type="module" crossorigin="" src="./js/blogcard.min.js?v=1766697099503"></script>
-		<link rel="stylesheet" crossorigin="" href="./css/main.min.css?v=1766697099503">
-		<link rel="stylesheet" crossorigin="" href="./css/breadcrumbs.min.css?v=1766697099503">
-		<link rel="stylesheet" crossorigin="" href="./css/blogcard.min.css?v=1766697099503">
-		<link rel="stylesheet" crossorigin="" href="./css/blogsface.min.css?v=1766697099503">
+		<link rel="modulepreload" crossorigin href="./js/common.min.js?v=1766955939592">
+		<script type="module" crossorigin="" src="./js/main.min.js?v=1766955939592"></script>
+		<script type="module" crossorigin="" src="./js/breadcrumbs.min.js?v=1766955939592"></script>
+		<script type="module" crossorigin="" src="./js/blogcard.min.js?v=1766955939592"></script>
+		<link rel="stylesheet" crossorigin="" href="./css/main.min.css?v=1766955939592">
+		<link rel="stylesheet" crossorigin="" href="./css/breadcrumbs.min.css?v=1766955939592">
+		<link rel="stylesheet" crossorigin="" href="./css/blogcard.min.css?v=1766955939592">
+		<link rel="stylesheet" crossorigin="" href="./css/blogsface.min.css?v=1766955939592">
 	</head>
 	<body>
 		<div class="wrapper">
@@ -50,7 +53,7 @@
 				</div>
 			</header>
 			<main class="page page--blogs-face" aria-label="Blogs face">
-				<section class="page__blogs-face blogs-face" aria-labelledby="blogs-face-title">
+				<section data-fls-watcher="" data-fls-watcher-once="" class="page__blogs-face blogs-face" aria-labelledby="blogs-face-title">
 					<div class="blogs-face__container">
 						<h1 id="blogs-face-title" data-fls-title="" class="blogs-face__title title">Face</h1>
 						<nav data-fls-breadcrumbs="" aria-label="Breadcrumbs" class="blogs-face__breadcrumbs breadcrumbs">
@@ -69,7 +72,7 @@
 									<picture>
 										<source media="(max-width: 600px)" srcset="./assets/img/blogs/face/cleanser-600.webp" type="image/webp">
 										<source media="(max-width: 1200px)" srcset="./assets/img/blogs/face/cleanser-1200.webp" type="image/webp">
-										<img class="blog-card__image" alt="Woman with a green headband applying skincare in front of a pink background." loading="lazy" decoding="async" src="./assets/img/blogs/face/cleanser.webp">
+										<img class="blog-card__image" alt="Woman with a green headband applying skincare in front of a pink background." src="./assets/img/blogs/face/cleanser.webp">
 									</picture>
 									<div class="blog-card__content">
 										<div class="blog-card__inner">
@@ -84,7 +87,7 @@
 									<picture>
 										<source media="(max-width: 600px)" srcset="./assets/img/blogs/face/eye-patches-600.webp" type="image/webp">
 										<source media="(max-width: 1200px)" srcset="./assets/img/blogs/face/eye-patches-1200.webp" type="image/webp">
-										<img class="blog-card__image" alt="A girl with red hair and eye patches in front of a vibrant pink background." loading="lazy" decoding="async" src="./assets/img/blogs/face/eye-patches.webp">
+										<img class="blog-card__image" alt="A girl with red hair and eye patches in front of a vibrant pink background." src="./assets/img/blogs/face/eye-patches.webp">
 									</picture>
 									<div class="blog-card__content">
 										<div class="blog-card__inner">
@@ -99,7 +102,7 @@
 									<picture>
 										<source media="(max-width: 600px)" srcset="./assets/img/blogs/face/masks-600.webp" type="image/webp">
 										<source media="(max-width: 1200px)" srcset="./assets/img/blogs/face/masks-1200.webp" type="image/webp">
-										<img class="blog-card__image" alt="Woman relaxing with a facial mask on a pink background." loading="lazy" decoding="async" src="./assets/img/blogs/face/masks.webp">
+										<img class="blog-card__image" alt="Woman relaxing with a facial mask on a pink background." src="./assets/img/blogs/face/masks.webp">
 									</picture>
 									<div class="blog-card__content">
 										<div class="blog-card__inner">
@@ -112,7 +115,7 @@
 							<article data-fls-blogcard="" class="blog-card" aria-labelledby="blog-1-title">
 								<a href="acne.html" class="blog-card__link">
 									<picture>
-										<img class="blog-card__image" alt="Woman with acne applying yellow facial serum to her forehead using a dropper against a plain gray background." loading="lazy" decoding="async" src="./assets/img/blogs/acne.webp">
+										<img class="blog-card__image" alt="Woman with acne applying yellow facial serum to her forehead using a dropper against a plain gray background." src="./assets/img/blogs/acne.webp">
 									</picture>
 									<div class="blog-card__content">
 										<div class="blog-card__inner">
@@ -125,7 +128,7 @@
 							<article data-fls-blogcard="" class="blog-card" aria-labelledby="blog-2-title">
 								<a href="freckles.html" class="blog-card__link">
 									<picture>
-										<img class="blog-card__image" alt="Close-up portrait of a young woman with light skin covered in natural freckles, showing her grey-blue eye and glossy lips." loading="lazy" decoding="async" src="./assets/img/blogs/freckles.webp">
+										<img class="blog-card__image" alt="Close-up portrait of a young woman with light skin covered in natural freckles, showing her grey-blue eye and glossy lips." src="./assets/img/blogs/freckles.webp">
 									</picture>
 									<div class="blog-card__content">
 										<div class="blog-card__inner">
@@ -138,7 +141,7 @@
 							<article data-fls-blogcard="" class="blog-card" aria-labelledby="blog-3-title">
 								<a href="claymask.html" class="blog-card__link">
 									<picture>
-										<img class="blog-card__image" alt="Woman with a white towel wrapped around her hair has a dual-tone charcoal and white face mask applied while touching her face." loading="lazy" decoding="async" src="./assets/img/blogs/clay-mask.webp">
+										<img class="blog-card__image" alt="Woman with a white towel wrapped around her hair has a dual-tone charcoal and white face mask applied while touching her face." src="./assets/img/blogs/clay-mask.webp">
 									</picture>
 									<div class="blog-card__content">
 										<div class="blog-card__inner">
@@ -153,7 +156,7 @@
 				</section>
 			</main>
 			<footer data-fls-footer="" class="footer" aria-label="Site footer">
-				<div class="footer__container">
+				<div data-fls-watcher="" data-fls-watcher-once="" class="footer__container">
 					<div class="footer__inner">
 						<div data-fls-spollers="479.98" data-fls-spollers-one="" class="footer__content">
 							<details class="footer__column footer__column--company" aria-labelledby="footer-company-heading">
